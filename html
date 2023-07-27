@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>E-Wallet</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>E-Wallet</h1>
+    <nav>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Transactions</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <div class="container">
+    <section class="balance">
+      <h2>Your Balance</h2>
+      <p>$500.00</p>
+    </section>
+    
+    <section class="transaction-history">
+      <h2>Transaction History</h2>
+      <ul id="transaction-list">
+        <!-- Transaction items will be dynamically added here -->
+      </ul>
+    </section>
+    
+    <section class="transaction-form">
+      <h2>New Transaction</h2>
+      <form id="transaction-form">
+        <input type="text" id="recipient-input" placeholder="Recipient">
+        <input type="number" id="amount-input" placeholder="Amount">
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </div>
+  
+  <footer>
+    <p>&copy; 2023 E-Wallet. All rights reserved.</p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
